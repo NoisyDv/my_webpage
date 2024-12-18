@@ -6,97 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My_life_dashboard</title>
   <style>
-    table {
-      width: 50%;
-      border-collapse: collapse;
-      margin: 20px auto;
+    .dashboard_01 {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+
     }
 
-    th,
-    td {
-      border: 1px solid #000;
-      text-align: center;
-      padding: 10px;
-    }
-
-    th {
-      background-color: cyan;
-    }
-
-    .play {
-      width: 240px;
-      height: 20px;
-      background-color: yellow;
-    }
-
-    .relationship {
-      width: 100px;
-      height: 20px;
-      background-color: yellow;
-    }
-
-    .learning {
-      width: 233px;
-      height: 20px;
-      background-color: yellow;
-    }
-
-    .health {
-      width: 100px;
-      height: 20px;
-      background-color: yellow;
+    #health {
+      color: red;
     }
   </style>
 </head>
 
+
 <body>
+
   <h1 style="text-align: center;">LifeDashboard</h1>
+  <center>
+    <p>LifeDashboard ของ ต้นน้ำา พวงวิไล จะมี health หมายถึงความพึงพอใจในสุขภาพ play หมายถึงความพอใจในการเล่นเกม
+      learning หมายถึงความพึงพอใจในการเ
+      รายวิชาต่างๆ(โดยภาพรวม) relationship หมายถึง ความพพึงพอใจในความสัมพันธ์กับคนรอบตัวที่เกี่ยวข้อง</p>
+  </center>
+  <center>
+    <h2>08/12/2024</h2>
+  </center>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Point</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Play</td>
-        <td>
-          <div class="play">
-
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Relationship</td>
-        <td>
-          <div class="relationship">
-        </td>
-      </tr>
-      <tr>
-        <td>Learning</td>
-        <td>
-          <div class="learning">
-            <div></div>
-        </td>
-      </tr>
-      <tr>
-        <td>Health</td>
-        <td>
-          <div class="health">
-            <div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h1>08/12/2024</h1>
-  <img src="https://www.shutterstock.com/image-photo/national-harbor-md-usa-february-600nw-2430065795.jpg" alt=""
-    width=400px height=400px>
-  <p>Donald Trump เขาเป็นคนที่มีGrowth mind set เขาธุรกิจที่เขาเคยล้มเหลวไปหลายครั้ง<br>
-    เขาแพ้การเลือกตั้งประธานาธิบดีในปี2021
-    แต่เขาไม่ยอมแพ้และสมัยต่อมาเขาชนะการเลือกตั้งแต่จะได้เป็นประธานาธิบดีสหัฐในปี2025</p>
-
+  <div class="dashboard_01">
+    <label for="health">Health</label>
+    <progress id="health" value="28" max="100"></progress><br>
+    <label for="play">Play</label>
+    <progress id="play" value="35" max="100"></progress><br>
+    <label for="learning">Learning</label>
+    <progress id="learning" value="34" max="100"></progress><br>
+    <label for="relationship">Relationship</label>
+    <progress id="relationship" value="35" max="100"></progress>
+  </div>
+  <center>
+    <h2>15/12/2024</h2>
+  </center>
+  <div class="dashboard_01">
+    <label for="health">Health</label>
+    <progress id="health" value="45" max="100"></progress><br>
+    <label for="play">Play</label>
+    <progress id="play" value="50" max="100"></progress><br>
+    <label for="learning">Learning</label>
+    <progress id="learning" value="50" max="100"></progress><br>
+    <label for="relationship">Reelationship</label>
+    <progress id="relationship" value="40" max="100"></progress>
+  </div>
+  <a href="glowth_Mindset_person.html">My_GlowthMindset_person</a><br>
+  <a href="my_goal.html">my goal in 2025_2030</a>
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+  .dashboard_01 {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+      -webkit-appearance: none;
+      appearance: none;
+
+    }
+    progress {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    progress::-webkit-progress-bar {
+      background-color: yellowgreen;
+    }
+    progress ::-webkit-progress-value {
+      background-color: yellowgreen;
+      transition: width 0.3s ease;
+    }
+    body {
+      background-color:#cbd6c5;
+    }
+    #health {
+      color: red;
+    }
+    @keyframes  blink {
+      0%{
+        opacity: 0;
+      }
+      25%{
+        opcity:0.5;
+      }
+      50%{
+        opacity: 1;
+      }
+      75%{
+        opacity:0.5
+      }
+      100%{
+        opacity:0;
+      }
+    }
+    .link{
+      text-decoration:none;
+      font-size:25px;
+      font-weight:bold;
+      transition:all 0.3s ease;
+      position:fixed;
+      left: 10px;
+      bottom: 10px;
+      animation:blink 1.5s infinite;
+    }
+    .paragraph{
+        font-size:24px;
+        font-family:serif;
+    }
+  

@@ -5,40 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My_life_dashboard</title>
-  <style>
-    .dashboard_01 {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      align-items: center;
-      -webkit-appearance: none;
-      appearance: none;
 
-    }
-
-    progress {
-      -webkit-appearance: none;
-      appearance: none;
-    }
-
-    progress::-webkit-progress-bar {
-      background-color: yellowgreen;
-    }
-
-    progress ::-webkit-progress-value {
-      background-color: yellowgreen;
-      transition: width 0.3s ease;
-
-    }
-
-    body {
-      background-color: #ffa5a5;
-    }
-
-    #health {
-      color: red;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -46,68 +14,26 @@
 
   <h1 style="text-align: center;">LifeDashboard</h1>
   <center>
-    <p>LifeDashboard ของ ต้นน้ำา พวงวิไล จะมี health หมายถึงความพึงพอใจในสุขภาพ play หมายถึงความพอใจในการเล่นเกม
+    <p class="paragraph">LifeDashboard ของ ต้นน้ำา พวงวิไล จะมี health หมายถึงความพึงพอใจในสุขภาพ play หมายถึงความพอใจในการเล่นเกม
       learning หมายถึงความพึงพอใจในการเรียน
       รายวิชาต่างๆ(โดยภาพรวม) relationship หมายถึง ความพึงพอใจในความสัมพันธ์กับคนรอบตัวที่เกี่ยวข้อง</p>
-  </center>
-  <center>
-    <h2>08/12/2024</h2>
-  </center>
-
-  <div class="dashboard_01">
-    <label for="health">Health</label>
-    <progress id="health" value="28" max="100"></progress><br>
-    <label for="play">Play</label>
-    <progress id="play" value="35" max="100"></progress><br>
-    <label for="learning">Learning</label>
-    <progress id="learning" value="34" max="100"></progress><br>
-    <label for="relationship">Relationship</label>
-    <progress id="relationship" value="35" max="100"></progress>
-  </div>
-  <center>
-    <h2>15/12/2024</h2>
-  </center>
-  <div class="dashboard_01">
-    <label for="health">Health</label>
-    <progress id="health" value="45" max="100"></progress><br>
-    <label for="play">Play</label>
-    <progress id="play" value="50" max="100"></progress><br>
-    <label for="learning">Learning</label>
-    <progress id="learning" value="50" max="100"></progress><br>
-    <label for="relationship">Relationship</label>
-
-  </div>
-  <center>
-    <h2>22/12/2024</h2>
-  </center>
-  <div class="dashboard_01">
-    <label for="health">Health</label>
-    <progress id="health" value="56" max="100"></progress><br>
-    <label for="play">Play</label>
-    <progress id="play" value="39" max="100"></progress><br>
-    <label for="learning">Learning</label>
-    <progress id="learning" value="25" max="100"></progress><br>
-    <label for="relationship">Reelationship</label>
-    <progress id="relationship" value="50" max="100"></progress>
-  </div>
-
-  <center>
-    <h2>29/12/2024</h2>
-  </center>
-  <div class="dashboard_01">
-    <label for="health">Health</label>
-    <progress id="health" value="46" max="100"></progress><br>
-    <label for="play">Play</label>
-    <progress id="play" value="50" max="100"></progress><br>
-    <label for="learning">Learning</label>
-    <progress id="learning" value="35" max="100"></progress><br>
-    <label for="relationship">Reelationship</label>
-    <progress id="relationship" value="20" max="100"></progress>
-  </div>
+ </center>  
+  
 
 
-  <a href="glowth_Mindset_person.html">My_GlowthMindset_person</a><br>
-  <a href="my_goal.html">my goal in 2025_2030</a>
+ <div class="dashboard_01">
+ <script src="data.js"></script>
+ </div>
+
+
+
+
+  <a class="link" href="glowth_Mindset_person.html" style="bottom:60px">My_GlowthMindset_person<<=Click here</a><br>
+ <br> 
+ <br> 
+  <a class="link" href="my_goal.html" style="bottom:120px;">My goal in 2025_2030<<=Click here</a>
+  <a class="link" href="PDCA_plan.html" style="bottom:px;">จัดการวางแผนตามหลักPDCA<<=Click here</a>
+
 </body>
 
 </html>
